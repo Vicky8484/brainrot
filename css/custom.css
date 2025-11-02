@@ -1,0 +1,69 @@
+:root {
+  /* Colours */
+  --color-bg: rgb(231, 227, 176); /* page background /*
+
+  /* Header */
+  --color-head-bg: rgb(215, 123, 85);
+
+  /* Logotype */
+  --color-logotype-bg: rgb(81, 61, 52);
+  --color-text-logotype: rgb(173, 143, 100);
+  --font-logotype-size: 2rem;
+
+  /* Global menu */
+  --color-menu-bg: rgb(58, 88, 93);
+  /* Links */
+  --color-link-bg: rgb(173, 143, 100);
+  --color-link-hover: rgb(218, 44, 56); /* used */
+  --color-link-active: rgb(81, 61, 52); /* used */
+  --border-radius-links: 7px;
+
+  /* Headlines og rubrik */
+  --font-h1-size: 1rem;
+  --font-sub1-size: 1rem;
+  --font-h2-size: 1rem;
+  --font-h3-size: 1rem;
+  --color-headline-bg: rgb(218, 44, 56);
+  --color-headline-text-page: #42413d;
+
+  /* Tekst */
+  --color-text: #000;
+  --color-text-inverted: #cdccc4;
+
+  /*  Marginer */
+  --margin-head-bottom: 5px;
+
+  /* Borders */
+  --border-radius: 5px;
+
+  /* Cards */
+  --color-card-bg: rgb(152, 167, 126);
+  --color-cta-card-bg: rgb(215, 123, 85);
+  /* news-cards */
+  --color-news-bg: rgb(58, 88, 93);
+  --color-news-bg-inverted: rgb(81, 61, 52);
+  --color-cta-newscard-bg: rgb(173, 143, 100);
+  --color-cta-newscard-bg-inverted: rgb(215, 123, 85);
+
+  /* Fonts */
+  --font-family-sans: ui-sans-serif;
+  /* --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700; */
+
+  /* Text sizes */
+  --logotype-size: 1rem;
+  --headline1-size: 2rem;
+  --headline2-size: 1rem;
+  --headline3-size: 1rem;
+  --bodytext-size: 1rem;
+  --cta-text-size: 1rem;
+  --followup-text-size: 1rem;
+  --form-submit-size: 1rem;
+
+  /* Infographics */
+  --color-info-bg: #676161;
+  --color-infobox-1-bg: #cfcec6;
+  --color-infobox-2-bg: #969995;
+}
