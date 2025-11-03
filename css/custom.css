@@ -1,21 +1,21 @@
 :root {
   /* Colours */
-  --color-bg: rgb(231, 227, 176); /* page background /*
+  --color-bg: #e7e3b0; /* page background /*
 
   /* Header */
-  --color-head-bg: rgb(215, 123, 85);
+  --color-head-bg: #d77b55;
 
   /* Logotype */
-  --color-logotype-bg: rgb(81, 61, 52);
-  --color-text-logotype: rgb(173, 143, 100);
+  --color-logotype-bg: #513d34;
+  --color-text-logotype: #ad8f64;
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: rgb(58, 88, 93);
+  --color-menu-bg: #3a585d;
   /* Links */
-  --color-link-bg: rgb(173, 143, 100);
-  --color-link-hover: rgb(218, 44, 56); /* used */
-  --color-link-active: rgb(81, 61, 52); /* used */
+  --color-link-bg: #ad8f64;
+  --color-link-hover: #da2c38; /* used */
+  --color-link-active: #513d34; /* used */
   --border-radius-links: 7px;
 
   /* Headlines og rubrik */
@@ -23,11 +23,11 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: rgb(218, 44, 56);
+  --color-headline-bg: #da2c38;
   --color-headline-text-page: #42413d;
 
   /* Tekst */
-  --color-text: #000;
+  --color-text: #e7e3b0;
   --color-text-inverted: #cdccc4;
 
   /*  Marginer */
@@ -37,20 +37,20 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: rgb(152, 167, 126);
-  --color-cta-card-bg: rgb(215, 123, 85);
+  --color-card-bg: #98a77e;
+  --color-cta-card-bg: #d77b55;
   /* news-cards */
-  --color-news-bg: rgb(58, 88, 93);
-  --color-news-bg-inverted: rgb(81, 61, 52);
-  --color-cta-newscard-bg: rgb(173, 143, 100);
-  --color-cta-newscard-bg-inverted: rgb(215, 123, 85);
+  --color-news-bg: #3a585d;
+  --color-news-bg-inverted: #513d34;
+  --color-cta-newscard-bg: #ad8f64;
+  --color-cta-newscard-bg-inverted: #d77b55;
 
   /* Fonts */
-  --font-family-sans: ui-sans-serif;
-  /* --font-weight-light: 300;
+  --font-family-sans: "Rubik", ui-sans-serif;
+  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
-  --font-weight-bold: 700; */
+  --font-weight-bold: 700;
 
   /* Text sizes */
   --logotype-size: 1rem;
