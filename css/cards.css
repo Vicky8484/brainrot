@@ -12,12 +12,14 @@
   grid-template-rows: repeat(3, min-content);
   gap: 10px;
 }
-.daily_text h2 {
+h2 {
   background-color: var(--color-headline-bg);
   color: var(--color-text-inverted);
   padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 1rem;
-  margin: 0 0 0.5rem 0;
+  padding-block: 0.5rem;
+  padding-left: 0.5rem;
 }
+
 .daily_text p {
   padding-right: 2rem;
   margin: 0 0 1rem 0;

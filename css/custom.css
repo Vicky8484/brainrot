@@ -1,34 +1,35 @@
 :root {
   /* Colours */
-  --color-bg: #e7e3b0; /* page background /*
+  --color-bg: light-dark(#e7e3b0, #5a5948); /* page background /*
+
 
   /* Header */
-  --color-head-bg: #d77b55;
+  --color-head-bg: light-dark(#d77b55, #926f60);
 
   /* Logotype */
-  --color-logotype-bg: #513d34;
+  --color-logotype-bg: light-dark(#513d34, #2a221e);
   --color-text-logotype: #ad8f64;
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #3a585d;
+  --color-menu-bg: light-dark(#3a585d, #354345);
   /* Links */
-  --color-link-bg: #ad8f64;
-  --color-link-hover: #da2c38; /* used */
-  --color-link-active: #513d34; /* used */
+  --color-link-bg: light-dark(#ad8f64, #927955);
+  --color-link-hover: light-dark(#da2c38, #e84853); /* used */
+  --color-link-active: light-dark(#513d34, #2a221e); /* used */
   --border-radius-links: 7px;
 
   /* Headlines og rubrik */
-  --font-h1-size: 1rem;
-  --font-sub1-size: 1rem;
+  --font-h1-size: 4rem;
+  --font-sub1-size: 2rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #da2c38;
-  --color-headline-text-page: #42413d;
+  --color-headline-bg: light-dark(#da2c38, #e84853);
+  --color-headline-text-page: #fffcd6;
 
   /* Tekst */
-  --color-text: #e7e3b0;
-  --color-text-inverted: #cdccc4;
+  --color-text: #fffcd6;
+  --color-text-inverted: #fffcd6;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,13 +38,13 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #98a77e;
-  --color-cta-card-bg: #d77b55;
+  --color-card-bg: light-dark(#98a77e, #869966);
+  --color-cta-card-bg: light-dark(#d77b55, #926f60);
   /* news-cards */
-  --color-news-bg: #3a585d;
-  --color-news-bg-inverted: #513d34;
-  --color-cta-newscard-bg: #ad8f64;
-  --color-cta-newscard-bg-inverted: #d77b55;
+  --color-news-bg: light-dark(#3a585d, #354345);
+  --color-news-bg-inverted: light-dark(#513d34, #2a221e);
+  --color-cta-newscard-bg: light-dark(#ad8f64, #927955);
+  --color-cta-newscard-bg-inverted: light-dark(#d77b55, #926f60);
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
@@ -63,7 +64,286 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #676161;
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-info-bg: light-dark(#98a77e, #869966);
+  --color-infobox-1-bg: light-dark(#ad8f64, #927955);
+  --color-infobox-2-bg: light-dark(#d77b55, #926f60);
 }
+html {
+  color-scheme: light dark;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+/*rykker p-tekst i teaserbokse længere mod højre*/
+.move {
+  padding-left: 7px;
+}
+
+/*rykker h1 på forside ned til midten af logo-ikonet*/
+.move-down {
+  padding-block: 3rem;
+}
+
+/*ændre width på ikon-logo*/
+.width-change {
+  width: 160px;
+  height: 190px;
+}
+/*rykker logo ikon og h1 længere ned på orange boks*/
+#main-disclamer-content {
+  padding-top: 40px;
+}
+/*ændre størrelsen på billederne i nyhederne*/
+.width-change-img {
+  width: 295px;
+  border-radius: 15px;
+}
+
+/*dialog-bokse, første modal*/
+#dialog1 {
+  background-color: light-dark(#e7e3b0, #5a5948);
+  max-height: 90vh;
+  max-width: 60ch;
+  width: 90vw;
+  border-color: light-dark(#513d34, #2a221e);
+}
+
+/*popup modaler, anden og tredje modal*/
+#popup {
+  background-color: light-dark(#fffcd6, #7d7c64);
+  max-height: 90vh;
+  max-width: 60ch;
+  width: 90vw;
+  border-color: light-dark(#513d34, #2a221e);
+}
+#popup1 {
+  background-color: light-dark(#fffcd6, #7d7c64);
+  max-height: 90vh;
+  max-width: 60ch;
+  width: 90vw;
+  border-color: light-dark(#513d34, #2a221e);
+}
+
+#popup3 {
+  background-color: light-dark(#fffcd6, #7d7c64);
+  max-height: 90vh;
+  max-width: 60ch;
+  width: 90vw;
+  border-color: light-dark(#513d34, #2a221e);
+  padding: 1rem;
+  padding-top: 0;
+  transition: all 1s ease;
+}
+
+#popup4 {
+  background-color: light-dark(#fffcd6, #7d7c64);
+  max-height: 90vh;
+  max-width: 60ch;
+  width: 90vw;
+  border-color: light-dark(#513d34, #2a221e);
+  padding: 1rem;
+  padding-top: 0;
+  /*transition: all 1s ease;*/
+}
+
+/*harmonika styling*/
+summary {
+  background-color: light-dark(#d77b55, #926f60);
+  padding: 1rem;
+}
+/*fjerner default trekanten der symbolisere åben/lukket*/
+summary::marker {
+  content: none;
+}
+/*giver harmonikaen + og - tegn baseret på åben/lukket i stedet*/
+summary::after {
+  content: "+";
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+[open] summary::after {
+  content: "–";
+}
+/*animere harmonikaen, så indholdet folder ud i stedet for bare at poppe ud*/
+::details-content {
+  height: 0;
+  overflow: clip;
+  transition: 1s allow-discrete;
+}
+
+[open]::details-content {
+  height: auto;
+}
+
+/*toppen og bunden af harmonikaen*/
+#top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#bottom {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+/*gør summary teksten lys*/
+.summary-text {
+  color: #fffcd6;
+}
+
+/*baggrunden*/
+::backdrop {
+  backdrop-filter: blur(10px);
+}
+
+/*animation med transitions på anden og tredje modaler*/
+[popover] {
+  opacity: 0;
+  rotate: 360deg;
+  transition: 0.5s allow-discrete;
+}
+
+[popover]:popover-open {
+  opacity: 1;
+  rotate: none;
+
+  @starting-style {
+    opacity: 0;
+    rotate: 360deg;
+  }
+}
+
+/*animation på teaser modaler*/
+[popover].popupteaser {
+  opacity: 0;
+  transition: 1s allow-discrete;
+}
+
+[popover]:popover-open {
+  opacity: 1;
+  rotate: none;
+
+  @starting-style {
+    opacity: 0;
+  }
+}
+
+/*gør h3 større i modaler*/
+.bigger-text {
+  font-size: 1.8rem;
+}
+
+/*se mere knapper*/
+.cta_btn {
+  border: none;
+  text-align: left;
+}
+
+.cta_btn:hover {
+  background-color: light-dark(#3a585d, #354345);
+}
+
+/*luk knap styling*/
+#close_btn {
+  background-color: #ad8f64;
+  padding-block: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  color: #fffcd6;
+  border: none;
+}
+
+#close_btn:hover {
+  background-color: light-dark(#3a585d, #354345);
+}
+
+/*læs mere knap styling*/
+#cta_open1 {
+  border: none;
+}
+#cta_open2 {
+  border: none;
+}
+
+#cta_open1:hover {
+  background-color: light-dark(#d77b55, #926f60);
+  border: none;
+}
+#cta_open2:hover {
+  background-color: light-dark(#3a585d, #354345);
+  border: none;
+}
+
+/*logostyling*/
+#logotypeimg {
+  width: 330px;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  padding-left: 0;
+}
+#logotypeimg:hover {
+  padding: 0;
+  width: 360px;
+  background: none;
+}
+
+/*teaser billeder styling*/
+.teaserimg {
+  padding-top: 0.8rem;
+  border-radius: 0;
+  height: 215px;
+}
+
+.teaserimg2 {
+  padding-top: 0.8rem;
+  border-radius: 0;
+  height: 195px;
+}
+
+/*skema på teaser 3*/
+table {
+  border: #513d34 solid;
+  text-align: left;
+  background-color: #d4b892;
+}
+th {
+  background-color: #ad8f64;
+  padding: 0.6rem;
+}
+td {
+  padding: 0.6rem;
+  border: #513d34 solid;
+}
+
+table,
+th,
+td,
+tr {
+  border-collapse: collapse;
+}
+
+.bcg-change {
+  background-color: #e3d2b9;
+}
+
+/*TOGGLE BUTTON*/
+#theme-btn {
+  border-radius: 10px;
+  background-color: light-dark(#da2c38, #e84853);
+  border: none;
+  padding: 0.4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 10rem;
+  font-size: 1rem;
+  width: 200px;
+}
+
+#theme-btn:hover {
+  background-color: light-dark(#98a77e, #869966);
+}
+/****************************************/

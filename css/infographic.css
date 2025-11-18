@@ -5,9 +5,9 @@
 .info-text {
   background-color: var(--color-info-bg);
   padding: 20px 0;
+  /*border-radius: 20px;*/
 }
 .info-graphic {
-  border-radius: 0;
   margin: 60px auto 80px auto;
 }
 .info-text h2 {
@@ -18,11 +18,12 @@
   margin-bottom: 1rem;
 }
 .info-text h3 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 0.8rem;
   font-weight: 600;
   margin: 0;
   padding: 0;
+  padding-bottom: 0.3rem;
 }
 .info-text > *:not(:first-child) {
   margin: 0 clamp(1rem, 10%, 7rem);
@@ -39,4 +40,86 @@
 }
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
+}
+
+.uniform2 {
+  padding: 0;
+  padding-left: 1rem;
+  /*text-align: center;*/
+}
+.brun-text {
+  color: light-dark(#513d34, #2a221e);
+}
+
+#gocrazy {
+  background-color: light-dark(#3a585d, #354345);
+  padding-block: 0.2rem;
+  border-radius: 15px;
+  /*border: #513d34 solid;*/
+  border: none;
+  width: 130px;
+  box-shadow: light-dark(#79665d, #2a221e) 5px 6px 5px;
+}
+#gocrazy:focus {
+  background-color: #fffcd6;
+  /*border: #ad8f64 solid;*/
+  border: none;
+  color: light-dark(#513d34, #2a221e);
+  width: 120px;
+}
+
+#stop {
+  background-color: #ad8f64;
+  padding-block: 0.2rem;
+  border-radius: 15px;
+  /*border: #513d34 solid;*/
+  border: none;
+  width: 120px;
+  margin-left: 0.5rem;
+  box-shadow: light-dark(#79665d, #2a221e) 5px 6px 5px;
+}
+
+#stop:focus {
+  background-color: #fffcd6;
+  /* border: #ad8f64 solid;*/
+  border: none;
+  color: light-dark(#513d34, #2a221e);
+  width: 110px;
+}
+
+#panik {
+  background-color: light-dark(#da2c38, #e84853);
+  padding-block: 0.2rem;
+  border-radius: 15px;
+  /*border: #513d34 solid;*/
+  border: none;
+  width: 140px;
+  margin-left: 0.5rem;
+  box-shadow: light-dark(#79665d, #2a221e) 5px 6px 5px;
+}
+
+#panik:focus {
+  background-color: #fffcd6;
+  /* border: #ad8f64 solid;*/
+  border: none;
+  color: light-dark(#513d34, #2a221e);
+  width: 130px;
+}
+
+#gocrazy:hover {
+  background-color: light-dark(#d77b55, #926f60);
+  width: 120px;
+}
+#stop:hover {
+  background-color: #98a77e;
+  width: 110px;
+}
+#panik:hover {
+  background-color: light-dark(#513d34, #2a221e);
+  color: #fffcd6;
+  width: 130px;
+}
+
+#hjalp {
+  font-size: 2rem;
 }

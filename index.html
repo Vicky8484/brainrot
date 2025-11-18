@@ -1,119 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="frontpage">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
-    <section id="main-disclamer">
-      <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
-        <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
-        </div>
-      </div>
-    </section>
-    <main>
-      <section id="daily">
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-      </section>
-      <section id="breaking">
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-      </section>
-    </main>
 
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="icon" type="image/png" href="img/fav.png">
+  <title>Emergency Site</title>
+</head>
+
+<body id="frontpage">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"><img id="logotypeimg" src="./img/logotype-8.png" alt="logo"></a>
+      </div>
+      <div><button id="theme-btn">Dark Mode</button></div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Brain rot</a></li>
+        <li><a class="menuItem" href="register.html">Hjælp mig</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+  <section id="main-disclamer">
+    <div id="main-disclamer-content">
+      <img class="width-change" src="./img/ikonLogo-8.png" alt="ICON">
+      <div class="move-down">
+        <h1>BRAIN ROT</h1>
+        <p class="sub">NÅR DIN HJERNE GÅR I FORDÆRVELSE</p>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section id="daily">
+      <!--Teasere på forsiden-->
+      <article class="daily_card">
+        <img class="teaserimg" src="./img/udenHotspots.png" alt="Billede af en dreng der kigger på en telefon.">
+        <div class="daily_text">
+          <h2>Vågn op: Få dit fokus tilbage fra 'brain rot'</h2>
+          <p class="move">
+            Er dine apps ved at overtage dit liv? 📱 TikTok, Reels, Shorts – de er designet til at gøre dig afhængig.
+            Det er
+            #brainrot, der fører til depression og søvnproblemer. Tid til en reality check?
+          </p>
+          <a href="instruction.html" class="cta_btn">Se mere</a>
+        </div>
+      </article>
+      <article class="daily_card">
+        <img class="teaserimg" src="./img/forsideimg/hjernen2.png" alt="Billede af forskellig farvet rådne hjerner.">
+        <div class="daily_text">
+          <h2>Mister du fokus? Det er ikke bare dig</h2>
+          <p class="move">
+            Mister du fokus hurtigere end en TikTok-swipe? 🤯 Du scroller i timevis, men din hjerne er "offline", når
+            det gælder
+            lektier? Det er "brain rot". Take control! Få lavet en afvænningsplan
+            her GRATIS!
+          </p>
+          <a href="register.html" class="cta_btn">Se mere</a>
+        </div>
+      </article>
+      <article class="daily_card">
+        <img class="teaserimg2" src="./img/forsideimg/test.png" alt="Billede af en test med en blyant">
+        <div class="daily_text">
+          <h2>Når tankerne rådner</h2>
+          <p class="move">
+            Scrollen bliver til vanen, vanen til afhængighed – og pludselig føles hjernen som mos. Er du ved at udvikle
+            digital
+            brain rot? Tag brain rot testen!🗒️
+          </p>
+          <div popover id="popup4" class="popupteaser">
+            <h2 class="bigger-text">✅ Brain Rot Check – Afkrydsningsskema</h2>
+            <p>Print skemaet ud og sæt kryds ved de udsagn, der passer på dig. Jo flere krydser, jo større grund til at
+              tage en pause og
+              genoplade hjernen!</p>
+            <table>
+              <tr>
+                <th>Nr.</th>
+                <th>Udsagn</th>
+                <th>Ja</th>
+                <th>Nej</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Jeg åbner en app og glemmer straks, hvorfor jeg gjorde det</td>
+                <td>&#x2610;</td>
+                <td>&#x2610;</td>
+              </tr>
+              <tr class="bcg-change">
+                <td>2</td>
+                <td>Jeg scroller i timevis uden at huske noget af det, jeg har set</td>
+                <td>&#x2610;</td>
+                <td>&#x2610;</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Jeg har svært ved at koncentrere mig om én ting i mere end 5 minutter</td>
+                <td>&#x2610;</td>
+                <td>&#x2610;</td>
+              </tr>
+              <tr class="bcg-change">
+                <td>4</td>
+                <td>Jeg føler mig konstant mentalt træt, selv efter søvn</td>
+                <td>&#x2610;</td>
+                <td>&#x2610;</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Jeg har glemt, hvordan man læser en hel bog uden at tjekke telefonen</td>
+                <td>&#x2610;</td>
+                <td>&#x2610;</td>
+              </tr>
+              <tr class="bcg-change">
+                <td>6</td>
+                <td>Jeg starter mange opgaver, men færdiggør sjældent nogen</td>
+                <td>&#x2610;</td>
+                <td>&#x2610;</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Jeg har svært ved at huske, hvad jeg lavede i går</td>
+                <td>&#x2610;</td>
+                <td>&#x2610;</td>
+              </tr>
+              <tr class="bcg-change">
+                <td>8</td>
+                <td>Jeg føler mig overstimuleret af sociale medier</td>
+                <td>&#x2610;</td>
+                <td>&#x2610;</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Jeg har mistet interessen for ting, jeg plejede at nyde</td>
+                <td>&#x2610;</td>
+                <td>&#x2610;</td>
+              </tr>
+              <tr class="bcg-change">
+                <td>10</td>
+                <td>Jeg føler mig som en zombie foran skærmen</td>
+                <td>&#x2610;</td>
+                <td>&#x2610;</td>
+              </tr>
+            </table>
+            <br>
+            <p><b>Resultatvejledning:</b></p>
+            <ul>
+              <li>0–2 krydser: Du er skarp som en kniv! Fortsæt med at passe på dig selv.
+              </li>
+              <li>3–5 krydser: Din hjerne kunne bruge en lille pause – måske en gåtur eller en skærmfri dag?</li>
+              <li>6–8 krydser: Du er i risikozonen for “brain rot”. Overvej at ændre dine vaner.
+              </li>
+              <li>9–10 krydser: Din hjerne råber på hjælp! Tid til digital detox og mental genopladning.</li>
+            </ul>
+            <br>
+            <button popovertarget="popup4" id="close_btn">Luk opskrift</button>
+          </div>
+          <button popovertarget="popup4" class="cta_btn">Se mere</button>
+        </div>
+      </article>
+      <article class="daily_card">
+        <img class="teaserimg2" src="./img/forsideimg/opskrift.png"
+          alt="Billede af en opskrift i blandt en masse hjerner">
+        <div class="daily_text">
+          <h2>Anti-Brain Rot Eliksir</h2>
+          <p class="move">
+            Føles hjernen som grød? Her er din opskrift på mental genoplivning – med koncentration, frisk luft og
+            digital detox som
+            hovedingredienser. Tryk og få klarhed!
+          </p>
+          <div popover id="popup3" class="popupteaser">
+            <h2 class="bigger-text">🍔 Opskrift: “Anti-Brain Rot Eliksir”</h2>
+            <p><b>Antal portioner:</b> 1 klar og fokuseret hjerne
+            </p>
+            <p><b>Tid:</b> 7 dage med daglig vedligeholdelse</p>
+            <p><b>Sværhedsgrad:</b> Overkommelig med vilje og lidt selvdisciplin</p>
+            <img src="./img/forsideimg/eliksir.png" alt="En grønlig eliksir i en glaskolbe.">
+            <br>
+            <details open>
+              <summary id="top" class="summary-text">
+                <b>🧂 Ingredienser</b>
+              </summary>
+              <div>
+                <ul>
+                  <li>1 spsk digital detox (skærmtid reduceret med min. 50%)</li>
+                  <li>2 dl frisk luft og dagslys</li>
+                  <li>3 håndfulde fysisk aktivitet (gåture, dans, yoga – vælg frit)</li>
+                  <li>1 tsk dyb koncentration (f.eks. læsning eller kreativt arbejde)</li>
+                  <li>5 skiver social kontakt (ægte samtaler, ikke emojis)</li>
+                  <li>1 knivspids ny nysgerrighed (lær noget nyt hver dag)</li>
+                  <li>Et drys søvn af høj kvalitet (min. 7 timer)</li>
+                  <li>Valgfrit: dagbog, meditation, eller analog hobby</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary class="summary-text"><b>👩‍🍳 Fremgangsmåde</b></summary>
+              <div>
+                <ol>
+                  <li>Forbered din hjerne: Start med at slukke for notifikationer på din telefon. Læg den fysisk væk i
+                    mindst 2 timer dagligt.
+                    Det skaber ro og reducerer overstimulering.</li><br>
+                  <li>Tilsæt frisk luft og bevægelse: Gå udenfor. Bevæg dig. Det behøver ikke være hårdt – bare nok til
+                    at
+                    få blodet til at
+                    cirkulere og tankerne til at løsne sig.</li><br>
+                  <li>Fold social kontakt ind: Tal med nogen ansigt til ansigt eller over telefonen. Del tanker, grin,
+                    stil
+                    spørgsmål. Hjernen
+                    elsker ægte interaktion.</li><br>
+                  <li>Smag til med nysgerrighed: Lær ét nyt faktum, ét nyt ord, ét nyt perspektiv hver dag. Det kan være
+                    via
+                    en podcast, en
+                    artikel eller en samtale.</li><br>
+                  <li>Lad hvile trække smagen frem: Prioritér søvn. Ingen skærme en time før sengetid. Brug den tid på
+                    at
+                    læse, meditere eller
+                    bare være.</li><br>
+                  <li>Server med stolthed: Efter en uge vil du mærke klarhed, ro og en spirende kreativitet. Gentag
+                    dagligt
+                    for vedvarende
+                    effekt.</li>
+                </ol>
+              </div>
+            </details>
+            <details>
+              <summary id="bottom" class="summary-text">
+                <b>💡 Tips</b>
+              </summary>
+              <div>
+                <ul>
+                  <li>Brain rot trives i passivitet og overstimulering. Din modgift er aktiv tilstedeværelse og
+                    bevidsthed.
+                  </li>
+                  <li>Du behøver ikke være perfekt – bare konsekvent.</li>
+                  <li>Bonus: Din telefon bliver mindre interessant, og din hjerne mere levende.</li>
+                </ul>
+              </div>
+            </details>
+            <br>
+            <button popovertarget="popup3" id="close_btn">Luk opskrift</button>
+          </div>
+          <button popovertarget="popup3" class="cta_btn">Se mere</button>
+        </div>
+      </article>
+    </section>
+
+    <!--nyhederne ude i siden-->
+    <section id="breaking">
+      <article class="news_card">
+        <h3>Når din hjerne bliver til TikTok-puré</h3>
+        <p>Du tror bare du "lige tjekker TikTok" - men det er din hjerne der bliver kogt langsomt i dopamin.</p>
+        <img class="width-change-img" src="./img/forsideimg/drengen2.png"
+          alt="En gruppe unge der alle kigger på deres mobiltelefoner.">
+
+        <!--modal-artikel1-->
+        <dialog id="dialog1">
+          <form method="dialog">
+            <h2 class="bigger-text"> 🧠 Brain Rot – når din hjerne bliver til TikTok-puré</h2>
+            <p>Du tror bare, du “lige tjekker TikTok” — men det er din hjerne,
+              <br>der bliver kogt langsomt i dopamin.
+            </p>
+            <img src="./img/forsideimg/drengen2.png" alt="En dreng der er i trance, mens han ser tiktok.">
+            <br>
+            <p><b>TikTok-trance</b></p>
+            <p>Forestil dig, at din hjerne er en gryde, og TikTok er varmen nedenunder. Hver gang du swiper, skrues der
+              en lille smule
+              op. Du mærker det ikke med det samme — men pludselig koger gryden over. Det er brain rot: når hjernen
+              bliver så vant til
+              hurtig, konstant stimulering, at alt andet føles kedeligt.</p>
+            <p>Du kender det sikkert: du åbner appen bare for at se “lige ét klip mere”, og før du ved af det, er der
+              gået 45 minutter.
+              Du ved, du burde stoppe, men din hjerne vil have mere. Det er ikke din skyld — det er designet sådan.</p>
+            <p><b>Glæden ved ting der tager tid</b></p>
+            <p>Apps som TikTok, YouTube Shorts og Instagram Reels udnytter hjernens belønningssystem. Hver gang du
+              swiper, får du et
+              lille skud dopamin, hjernens “feel good”-stof. Problemet? Jo oftere du får det, jo sværere bliver det at
+              mærke glæde fra
+              ting, der tager tid: samtaler, skole, sport, søvn.</p>
+            <p>Pludselig føles alt andet “for langsomt”. En 10-minutters video? For lang. En bog? Umulig. En samtale
+              uden at tjekke
+              mobilen? Kedsommeligt. Det er her brain rot for alvor sætter ind — du mister tålmodigheden og
+              koncentrationen. Det er
+              som om hjernen har glemt, hvordan man bare... eksisterer.</p>
+            <p><b>Dopamin detox</b></p>
+            <p>Men der er håb. En “dopamin detox” kan faktisk redde dig. Det betyder ikke, at du skal slette alt — bare
+              give hjernen en
+              pause. Prøv en dag uden shortform-videoer. Det føles mærkeligt i starten, men efter nogle timer begynder
+              hjernen at
+              finde ro. Du mærker igen, at tid kan føles lang — på den gode måde.
+              Din hjerne er ikke ødelagt. Den er bare overophedet. Sluk for varmen, og den begynder langsomt at hele
+              igen.</p>
+            <br>
+            <button id="close_btn">Luk artikel</button>
+          </form>
+        </dialog>
+        <button class="cta_btn" id="cta_open1">Læs mere</button>
+      </article>
+      <article class="news_card">
+        <h3>Sociale medier ødelægger ikke bare din tid - de hacker din hjerne</h3>
+        <p>Sociale medier får dig til at føle du er forbundet med alle - men i virkeligheden bliver du mere alene end
+          nogensinde.</p>
+        <img class="width-change-img" src="./img/forsideimg/pigerne.png"
+          alt="En gruppe piger der alle stirrer på deres mobiler.">
+
+        <!--modal-artikel2-->
+        <div popover id="popup">
+          <h2 class="bigger-text">📱 De sociale medier hacker din hjerne</h2>
+          <p>Sociale medier får dig til at føle, du er forbundet med alle — men i virkeligheden bliver du mere alene end
+            nogensinde.
+          </p>
+          <img src="./img/forsideimg/pigerne.png" alt="En gruppe piger der alle stirrer på deres mobiler.">
+          <br>
+          <p><b>Du er stofmisbruger</b></p>
+          <p>Hver gang du får et like, en kommentar eller en ny følger, sker der noget i din hjerne. Den udskiller
+            dopamin — det
+            samme stof, der aktiveres af sukker, spil og stoffer. Det føles godt. Men ligesom med alt andet, der føles
+            godt, vil du
+            have mere. Og mere. Og mere.</p>
+          <p>Sociale medier som TikTok, Instagram og Snapchat lever af din opmærksomhed. De bruger algoritmer, der er
+            skabt til at
+            holde dig fanget. De ved præcis, hvad du vil se, hvornår du keder dig, og hvilke typer indhold der får dig
+            til at blive
+            hængende. Det er derfor, du åbner appen “bare for at tjekke noget” — og pludselig er der gået en time.</p>
+          <p><b>Mangel på ægte kontakt</b></p>
+          <p>Men det handler ikke kun om tid. Det handler om, hvordan det ændrer din hjerne og dit forhold til andre. Jo
+            mere tid du
+            bruger online, jo mindre tid bruger du på ægte kontakt. Vi er “forbundet” hele tiden, men vi taler mindre,
+            ser færre
+            mennesker, og føler os mere alene. Mange unge oplever lavere selvværd, fordi de konstant sammenligner sig
+            med andres
+            perfekte liv på skærmen. Det er en illusion — men hjernen tror på det, den ser.</p>
+          <p><b>Tag kontrollen tilbage</b></p>
+          <p>Du kan ikke kæmpe mod algoritmen alene, men du kan tage kontrollen tilbage. Slå notifikationer fra. Sæt
+            tidsgrænser.
+            Brug sociale medier bevidst i stedet for automatisk. Du behøver ikke slette alt — bare bruge det på dine
+            egne vilkår.
+            Din hjerne er ikke et stykke software, der kan opdateres med et klik. Men du kan “debugge” den ved at tage
+            pauser og
+            være mere til stede i virkeligheden. Det er der, det ægte dopamin findes.</p>
+          <br>
+          <button popovertarget="popup" id="close_btn">Luk artikel</button>
+        </div>
+        <button popovertarget="popup" class="cta_btn" id="cta_open2">Læs mere</button>
+      </article>
+      <article class="news_card">
+        <h3>Historien om Emil - drengen der forsvandt ind i skærmen</h3>
+        <p>Han ville bare se et par Youtube Shorts. Men en dag stoppede han ikke igen.</p>
+        <img class="width-change-img" src="./img/forsideimg/huset.png" alt="Et isoleret og forladt hus. Her bor Emil.">
+
+        <!--modal-artikel3-->
+        <div popover id="popup1">
+          <h2 class="bigger-text">😔 Historien om Emil – drengen der forsvandt ind i skærmen</h2>
+          <p>Han ville bare se et par YouTube Shorts. Men en dag stoppede han ikke igen.</p>
+          <img src="./img/forsideimg/huset.png" alt="Et isoleret og forladt hus. Her bor Emil.">
+          <br>
+          <p><b>Emil var bare en dreng</b></p>
+          <p>Emil var 16 år og elskede at spille fodbold, hænge ud med vennerne og game lidt om aftenen. Helt almindelig
+            fyr. Men så
+            begyndte han at se YouTube Shorts. “Bare lige et par klip inden jeg skal sove,” sagde han. Men søvnen kom
+            aldrig.</p>
+          <p>Det startede uskyldigt, men snart sad han til langt ud på natten med mobilen i hånden. Skole blev hårdere.
+            Træning blev
+            droppet. Han begyndte at isolere sig. “Jeg orker ikke,” sagde han, mens han scrollede videre. Hans venner
+            skrev, men han
+            svarede sjældent. Familien så ham mest som et ansigt oplyst af skærmens blå lys.</p>
+          <p><b>En tom skal</b></p>
+          <p>En aften gik internettet i huset. Forældrene fandt Emil grædende. Han følte sig tom, rastløs — som om han
+            ikke fandtes
+            uden sin skærm. Uden videoerne vidste han ikke, hvad han skulle stille op med sig selv. Det var dér, han
+            indså, hvor
+            langt han var faldet ned i det digitale hul.</p>
+          <p><b>Afvænning</b></p>
+          <p>I dag prøver Emil at finde balancen igen. Han går ture uden mobilen, snakker med vennerne ansigt til ansigt
+            og har
+            slette-appen på standby, hvis det går for vidt. Han siger, det føles som at vågne fra en drøm, man troede
+            var virkelig.</p>
+          <p>Historien om Emil er ikke enestående. Den kunne være hvem som helst. Den kunne være dig. For skærmen føles
+            tryg — men
+            virkeligheden er stadig derude, og den er meget smukkere, når du kigger op.</p>
+          <br>
+          <button popovertarget="popup1" id="close_btn">Luk artikel</button>
+        </div>
+        <button popovertarget="popup1" class="cta_btn" id="cta_open1">Læs mere</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/dialog.js"></script>
+  <script src="js/lightdark.js"></script>
+</body>
+
 </html>

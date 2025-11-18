@@ -1,32 +1,199 @@
-#webform {
-  background-color: var(--form-background-color);
+.hide {
+  display: none;
 }
 
-#form-section,
-#form-summary {
-  background-color: var(--info-background-color);
-  padding: 0;
+/******************************************REGISTER SIDE*********************************/
+/***generelt***/
+
+form {
+  accent-color: light-dark(#d77b55, #926f60);
 }
-#form-summary h2 {
-  line-height: 3rem;
-  text-align: center;
-  background-color: var(--headline-bg-color-inverted);
-  color: var(--headline-color-inverted);
-  padding-top: 5px;
+
+#webform {
+  padding: 1.5rem;
+  padding-top: 0.5rem;
 }
-#form-summary h3 {
-  font-size: 0.8rem;
-  line-height: 0.8rem;
-  font-weight: 600;
+
+#form-section {
+  background-color: light-dark(#3a585d, #354345);
   margin: 0;
+  margin-right: 0.5rem;
+  border-radius: 15px;
   padding: 0;
+  padding-top: 2rem;
 }
-#form-summary > *:not(:first-child) {
-  margin: 0 clamp(1rem, 10%, 7rem);
+
+.uniform {
+  padding-left: 2.8rem;
+  /*text-align: center;*/
 }
-#form-summary p {
-  font-size: 0.8rem;
-  line-height: 1.3;
-  margin: 0 0 1.2rem 0;
+
+#form-summary {
+  background-color: light-dark(#ad8f64, #927955);
+  border-radius: 15px;
   padding: 0;
+  padding-top: 2rem;
+}
+
+fieldset {
+  background-color: light-dark(#98a77e, #869966);
+  border: light-dark(#98a77e, #869966) solid;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/***alt om input-felterne***/
+.input-width {
+  width: 40%;
+}
+.input-width2 {
+  width: 80%;
+  height: 300px;
+}
+input:user-invalid {
+  color: rgb(142, 66, 66);
+}
+input:user-valid {
+  color: light-dark(#513d34, #2a221e);
+}
+.brun-text {
+  color: light-dark(#513d34, #2a221e);
+}
+/*navn*/
+#name {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 3px;
+  padding-right: 30px;
+  padding-left: 5px;
+  border-radius: 15px;
+  background-color: #fffcd6;
+  border: none;
+}
+#name:focus {
+  background-color: #e7e3b0;
+}
+/*alder*/
+#alder {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 3px;
+  padding-right: 30px;
+  padding-left: 5px;
+  border-radius: 15px;
+  background-color: #fffcd6;
+  border: none;
+}
+#alder:focus {
+  background-color: #e7e3b0;
+}
+/*email*/
+#email {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 3px;
+  padding-right: 30px;
+  padding-left: 5px;
+  border-radius: 15px;
+  background-color: #fffcd6;
+  border: none;
+}
+#email:focus {
+  background-color: #e7e3b0;
+}
+/*hvor scroller du*/
+#scroll {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 3px;
+  padding-right: 30px;
+  padding-left: 5px;
+  border-radius: 15px;
+  background-color: #fffcd6;
+  border: none;
+}
+#scroll:focus {
+  background-color: #e7e3b0;
+}
+
+.bgcyellow {
+  background-color: #fffcd6;
+  border: light-dark(#513d34, #2a221e) solid;
+  border-width: 0.01rem;
+  padding: 3px;
+  padding-right: 7px;
+}
+
+#andet {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 3px;
+  padding-right: 30px;
+  padding-left: 5px;
+  border-radius: 15px;
+  background-color: #fffcd6;
+  border: none;
+}
+#andet:focus {
+  background-color: #e7e3b0;
+}
+
+/*textarea*/
+#situation {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 3px;
+  padding-right: 30px;
+  padding-left: 5px;
+  border-radius: 15px;
+  background-color: #fffcd6;
+  border: none;
+}
+
+/***checkbox brain rot***/
+.skal-flexes {
+  display: flex;
+  padding: 0.3rem;
+}
+
+/*gør at der er en rød stjerne på påkrævede felter*/
+.form-group:has(:required) {
+  label::after {
+    content: "*";
+    color: red;
+  }
+}
+
+/* Tilføj rød kant omkring input-feltet, hvis det er ugyldigt */
+.form-group:has(:user-invalid) {
+  input {
+    outline: 3px solid #f005;
+    border-color: darkred;
+    .error-message {
+      display: block;
+    }
+  }
+}
+.form-group:has(:user-invalid) textarea {
+  outline: 3px solid #f005;
+  border-color: darkred;
+}
+
+/*Indsend knap***/
+#submit {
+  background-color: light-dark(#ad8f64, #927955);
+  border: none;
+  padding-block: 0.7rem;
+  padding-right: 3rem;
+  padding-left: 0.7rem;
+  margin-top: 1rem;
+  border-radius: 15px;
+}
+#submit:hover {
+  background-color: light-dark(#d77b55, #926f60);
+}
+
+.opsummering {
+  padding-left: 1rem;
 }

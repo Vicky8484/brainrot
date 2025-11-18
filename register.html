@@ -1,81 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="register">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
 
-    <main>
-      <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="icon" type="image/png" href="img/fav.png">
+  <link rel="stylesheet" href="css/animations.css">
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"><img id="logotypeimg" src="./img/logotype-8.png" alt="logo"></a>
+      </div>
+      <div><button id="theme-btn">Dark Mode</button></div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Brain rot</a></li>
+        <li><a class="menuItem" href="register.html">Hjælp mig</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>FÅ EN BRAIN ROT AFVÆNNINGSPLAN SKRÆDDERSYET TIL DIG!</h1>
+    <section id="form-section">
+      <h2 class="uniform">Udfyld formularen</h2>
+      <form id="webform">
+        <fieldset>
+          <legend><label for="name"><b>Navn</b></label></legend>
+          <div class="form-group">
+            <input type="text" id="name" name="name" class="brun-text input-width" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><label for="alder"><b>Alder</b></label></legend>
+          <div class="form-group">
+            <input type="number" id="alder" name="alder" class="brun-text input-width" required min="1" max="100">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><label for="email"><b>E-mail</b></label></legend>
+          <div class="form-group">
+            <input type="email" id="email" name="email" class="brun-text input-width" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <label><b>Beskæftigelse</b></label>
+          </legend>
+          <div class="form-group">
+            <label for="studerende"><input type="radio" id="studerende" name="occupation" value="Studerende/elev">
+              Studerende</label>
+            <label for="arbejder"><input type="radio" id="arbejder" name="occupation" value="Arbejder">
+              Arbejder</label>
+            <label for="begge"><input type="radio" id="begge" name="occupation" value="Begge dele"> Begge dele</label>
+            <label for="ingen"><input type="radio" id="ingen" name="occupation" value="Ingen af delene"> Ingen af
+              delene</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><label for="scroll" class="stroke"><b>Hvor scroller du mest?</b></label></legend>
+          <div class="form-group">
+            <select class="brun-text" id="scroll" name="scroll" required>
+              <option value="" class="bgcyellow">Vælg</option>
+              <option value="tiktok" class="bgcyellow">Tiktok</option>
+              <option value="igreels" class="bgcyellow">Instagram reels</option>
+              <option value="ytshorts" class="bgcyellow">Youtube shorts</option>
+              <option value="x" class="bgcyellow">X (Twitter)</option>
+              <option value="twitch" class="bgcyellow">Twitch</option>
+              <option value="andet" class="bgcyellow">Andet</option>
+            </select>
+          </div>
+          <div class="form-group andet">
+            <label for="andet">Andet sted du scroller</label>
+            <input type="text" id="andet" name="andet" class="brun-text">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <label><b>Hvilke slags brain rot lider du af?</b></label>
+          </legend>
+          <div class="form-group">
+            <div class="skal-flexes">
+              <input type="checkbox" name="checkbox" id="ai-brainrot" value="AI brainrot">
+              <label for="ai-brainrot"> AI brain rot (herunder Italian brain rot) </label>
+            </div>
+            <div class="skal-flexes">
+              <input type="checkbox" name="checkbox" id="folkeskole-brainrot" value="Folkeskole brainrot">
+              <label for="folkeskole-brainrot"> Folkeskole brain rot (67)</label>
+            </div>
+            <div class="skal-flexes">
+              <input type="checkbox" name="checkbox" id="consumerism" value="Consumerism brainrot">
+              <label for="consumerism"> Consumerism brain rot (herunder showertok og makeup videoer)</label>
+            </div>
+            <div class="skal-flexes">
+              <input type="checkbox" name="checkbox" id="madlavning" value="Madlavningsvideoer">
+              <label for="madlavning"> Madlavningsvideoer</label>
+            </div>
+            <div class="skal-flexes">
+              <input type="checkbox" name="checkbox" id="fitness" value="Fitness obsession">
+              <label for="fitness"> Fitness obsession</label>
+            </div>
+            <div class="skal-flexes">
+              <input type="checkbox" name="checkbox" id="influencer" value="Influencer brain rot">
+              <label for="influencer"> Influencer brain rot (GRWM, opdelt storytime, day in the life)</label>
+            </div>
+            <div class="skal-flexes">
+              <input type="checkbox" name="checkbox" id="dance" value="Dance trends">
+              <label for="dance"> Dance trends</label>
+            </div>
+            <div class="skal-flexes">
+              <input type="checkbox" name="checkbox" id="storytime" value="AI-oplæst storytime">
+              <label for="storytime"> AI-oplæst storytime over random video</label>
+            </div>
+            <div class="skal-flexes">
+              <input type="checkbox" name="checkbox" id="film" value="Low budget tiktok format film">
+              <label for="film"> Low budget tiktok format film</label>
+            </div>
+            <div class="skal-flexes">
+              <input type="checkbox" name="checkbox" id="twitch" value="twitch streams">
+              <label for="twitch"> Twitch stream clips</label>
+            </div>
+            <div class="skal-flexes">
+              <input type="checkbox" name="checkbox" id="andre" value="Andre">
+              <label for="andre"> Andre</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><label for="situation"><b>Beskriv uddybende din situation/symptomer:</b></label></legend>
+          <div class="form-group">
+            <div class="textarea">
+              <textarea class="brun-text input-width2" name="beskrivelse" id="situation" required
+                placeholder="Skriv her"></textarea>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><label for="samtykke"><b>Samtykkeerklæring</b></label></legend>
+          <div class="skal-flexes">
+            <input type="checkbox" name="samtykke" id="samtykke" value="samtykke" required>
+            <label> Jeg giver samtykke til at Brain Rot gemmer og bruger dataen til at lave en afvænnings-plan
+              til mig, som bliver sendt til den angivne email indenfor en uge.</label>
+          </div>
+        </fieldset>
+        <button id="submit"><b>Indsend &#8594;</b></button>
+      </form>
+    </section>
+    <section id="form-summary">
+      <h2 class="uniform">Dine svar - Opsummering</h2>
+      <article>
+        <p class="opsummering"><b>Navn:</b>
+          <span class="first_output"></span>
+        </p>
+        <p class="opsummering"><b>Alder:</b>
+          <span class="alder_output"></span>
+        </p>
+        <p class="opsummering"><b>E-mail:</b>
+          <span class="email_output"></span>
+        </p>
+        <p class="opsummering"><b>Beskæftigelse:</b>
+          <span class="occu_output"></span>
+        </p>
+        <p class="opsummering"><b>Hvor du scroller mest:</b>
+          <span class="scroll_output"></span>
+        </p>
+        <p class="opsummering"><b>Hvilken slags brain rot du lider af:</b>
+          <span class="brainrot_output"></span>
+        </p>
+        <p class="opsummering"><b>Uddybende beskrivelse:</b>
+          <span class="beskrivelse_output"></span>
+        </p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/lightdark.js"></script>
+</body>
+
 </html>
