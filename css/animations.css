@@ -89,3 +89,25 @@
     font-size: 0.9rem;
   }
 }
+
+.colortransform {
+  animation: color_kf 1s linear;
+}
+
+@keyframes color_kf {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: orange;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: greenyellow;
+  }
+  100% {
+    background-color: lightblue;
+  }
+}

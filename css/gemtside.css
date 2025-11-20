@@ -1,0 +1,191 @@
+.gemtside {
+  background-color: /*rgb(76, 37, 56)*/ #10002b;
+}
+#divide {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.terapi {
+  background-color: /*rgb(102, 107, 69)*/ #3c096c;
+}
+
+/*harmonika styling*/
+details {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.summary2 {
+  background-color: /*rgb(79, 83, 54)*/ #5a189a;
+  padding: 1rem;
+}
+/*fjerner default trekanten der symbolisere åben/lukket*/
+summary::marker {
+  content: none;
+}
+/*giver harmonikaen + og - tegn baseret på åben/lukket i stedet*/
+summary::after {
+  content: "+";
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+[open] summary::after {
+  content: "–";
+}
+
+/*animere harmonikaen, så indholdet folder ud i stedet for bare at poppe ud*/
+::details-content {
+  height: 0;
+  overflow: clip;
+  transition: 1s allow-discrete;
+}
+
+[open]::details-content {
+  height: auto;
+}
+
+/*toppen og bunden af harmonikaen*/
+#top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#bottom {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 1rem;
+}
+/*gør summary teksten lys*/
+.summary-text {
+  color: #fffcd6;
+}
+
+/***knappen på header***/
+#hside {
+  border-radius: 10px;
+  background-color: #e0aaff;
+  color: #3c096c;
+  font-weight: 900;
+  border: none;
+  padding: 0.4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 18rem;
+  font-size: 1rem;
+  width: 200px;
+}
+
+#hside:hover {
+  background-color: #9d4edd;
+  color: #fffcd6;
+  font-weight: 400;
+}
+
+/*popup*/
+#popup6 {
+  padding: 1rem;
+  background-color: #240046;
+  max-height: 90vh;
+  max-width: 150ch;
+  width: 90vw;
+  border-color: #10002b;
+  color: #fffcd6;
+}
+
+#popup7 {
+  padding: 1rem;
+  background-color: #240046;
+  max-height: 90vh;
+  max-width: 60ch;
+  width: 90vw;
+  border-color: #10002b;
+  color: #fffcd6;
+}
+
+#popup8 {
+  padding: 1rem;
+  background-color: #240046;
+  max-height: 90vh;
+  max-width: 40ch;
+  width: 90vw;
+  border-color: #10002b;
+  color: #fffcd6;
+}
+
+.width-change-img2 {
+  width: 315px;
+  filter: sepia(30%);
+}
+
+/*kolonne styling*/
+.column {
+  float: left;
+  width: 33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#main-disclamer2 {
+  background-color:/* rgb(51, 79, 78)*/ #240046;
+}
+
+#logotype-wrapper2 {
+  background-color: /*#502b2d*/ #3c096c;
+}
+
+#logotypeimg2 {
+  width: 370px;
+  padding-left: 1rem;
+  filter: saturate(30%);
+}
+
+#logotypeimg2:hover {
+  padding: 0;
+  padding-left: 1rem;
+  width: 380px;
+  background: none;
+}
+
+.hop {
+  text-align: center;
+}
+:root {
+  --color-menu-bg: #5a189a;
+  --color-headline-bg: #7b2cbf;
+  --color-news-bg: #5a189a;
+  --color-news-bg-inverted: #3c096c;
+}
+
+#cta_open3 {
+  border: none;
+  background-color: #e0aaff;
+  padding-block: 0.5rem;
+  margin-top: 0.4rem;
+  margin-left: 7.5rem;
+  border-radius: 8px;
+  color: #fffcd6;
+  width: 100px;
+}
+#cta_open3:hover {
+  background-color: #9d4edd;
+}
+
+/*luk knap styling*/
+#close_btn2 {
+  background-color: #9d4edd;
+  padding-block: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  color: #fffcd6;
+  border: none;
+}
+
+#close_btn2:hover {
+  background-color: #7b2cbf;
+}

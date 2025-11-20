@@ -112,6 +112,7 @@ input:user-valid {
   border-radius: 15px;
   background-color: #fffcd6;
   border: none;
+  color: light-dark(#513d34, #513d34);
 }
 #scroll:focus {
   background-color: #e7e3b0;
