@@ -24,6 +24,11 @@ footer {
   display: grid;
   gap: 10px;
 }
+/*#footer-knapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}*/
+
 header nav,
 footer nav {
   display: flex;

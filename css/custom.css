@@ -76,6 +76,11 @@ html.dark {
   color-scheme: dark;
 }
 
+footer {
+  background-color: light-dark(#ad8f64, #927955);
+  justify-items: center;
+}
+
 /*rykker p-tekst i teaserbokse længere mod højre*/
 .move {
   padding-left: 7px;
@@ -104,6 +109,7 @@ html.dark {
 /*dialog-bokse, første modal*/
 #dialog1 {
   background-color: light-dark(#e7e3b0, #5a5948);
+  color: light-dark(black, #fffcd6);
   max-height: 90vh;
   max-width: 60ch;
   width: 90vw;
@@ -113,6 +119,7 @@ html.dark {
 /*popup modaler, anden og tredje modal*/
 #popup {
   background-color: light-dark(#fffcd6, #7d7c64);
+  color: light-dark(black, #fffcd6);
   max-height: 90vh;
   max-width: 60ch;
   width: 90vw;
@@ -120,6 +127,7 @@ html.dark {
 }
 #popup1 {
   background-color: light-dark(#fffcd6, #7d7c64);
+  color: light-dark(black, #fffcd6);
   max-height: 90vh;
   max-width: 60ch;
   width: 90vw;
@@ -127,7 +135,8 @@ html.dark {
 }
 
 #popup3 {
-  background-color: light-dark(#fffcd6, #7d7c64);
+  background-color: light-dark(#fffcd6, #89886f);
+  color: light-dark(black, #fffcd6);
   max-height: 90vh;
   max-width: 60ch;
   width: 90vw;
@@ -136,9 +145,13 @@ html.dark {
   padding-top: 0;
   transition: all 1s ease;
 }
+.popupteaser {
+  color: light-dark(black, #fffcd6);
+}
 
 #popup4 {
   background-color: light-dark(#fffcd6, #7d7c64);
+  color: light-dark(black, #fffcd6);
   max-height: 90vh;
   max-width: 60ch;
   width: 90vw;
@@ -147,6 +160,7 @@ html.dark {
   padding-top: 0;
   /*transition: all 1s ease;*/
 }
+/*ændre skriftfarve i modaler afhængigt af light-dark mode*/
 
 /*harmonika styling*/
 summary {
@@ -306,17 +320,17 @@ summary::after {
 
 /*skema på teaser 3*/
 table {
-  border: #513d34 solid;
+  border: light-dark(#513d34, #2a221e) solid;
   text-align: left;
-  background-color: #d4b892;
+  background-color: light-dark(#d4b892, #905e98);
 }
 th {
-  background-color: #ad8f64;
+  background-color: light-dark(#ad8f64, #6a346d);
   padding: 0.6rem;
 }
 td {
   padding: 0.6rem;
-  border: #513d34 solid;
+  border: light-dark(#513d34, #2a221e) solid;
 }
 
 table,
@@ -327,7 +341,7 @@ tr {
 }
 
 .bcg-change {
-  background-color: #e3d2b9;
+  background-color: light-dark(#e3d2b9, #b392b6);
 }
 
 /*TOGGLE BUTTON*/
@@ -346,4 +360,108 @@ tr {
 #theme-btn:hover {
   background-color: light-dark(#98a77e, #869966);
 }
-/****************************************/
+/*footer surprise knapper*/
+footer {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.tekstboksspil {
+  margin: 0;
+  background-color: light-dark(#da2c38, #e84853);
+  padding: 11.1rem;
+  border: none;
+  color: light-dark(#3a585d, #354345);
+  border-top-left-radius: 30px;
+}
+.tekstboksspil2 {
+  margin: 0;
+  background-color: light-dark(#da2c38, #e84853);
+  padding: 10rem;
+  border: none;
+  color: light-dark(#3a585d, #354345);
+}
+.tekstboksspil3 {
+  margin: 0;
+  background-color: light-dark(#da2c38, #e84853);
+  padding: 10rem;
+  border: none;
+  color: light-dark(#3a585d, #354345);
+  border-top-right-radius: 30px;
+}
+/*********/
+.surprise_btn {
+  background-color: light-dark(#3a585d, #354345);
+  margin: 1rem;
+  padding-block: 0.7rem;
+  border-radius: 30px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border: none;
+  color: light-dark(#3a585d, #354345);
+}
+.surprise_btn:hover {
+  background-color: light-dark(#98a77e, #869966);
+  color: light-dark(#98a77e, #869966);
+}
+
+/*forskellige farver til forskellige knapper*/
+
+#spb1 {
+  background-color: light-dark(#3a585d, #354345);
+  padding-left: 4.8rem;
+  padding-right: 4.8rem;
+}
+#spb1:hover {
+  box-shadow: rgb(44, 31, 8) 5px 6px 10px;
+  background-color: light-dark(#98a77e, #869966);
+  color: #fffcd6;
+  padding-left: 4.2rem;
+  padding-right: 4.2rem;
+}
+
+#spb2 {
+  background-color: light-dark(#3a585d, #354345);
+}
+#spb2:hover {
+  box-shadow: rgb(44, 31, 8) 5px 6px 10px;
+  background-color: light-dark(#98a77e, #869966);
+  color: #fffcd6;
+  padding-left: 4.2rem;
+  padding-right: 4.2rem;
+}
+
+#spb3 {
+  background-color: light-dark(#3a585d, #354345);
+}
+#spb3:hover {
+  box-shadow: rgb(44, 31, 8) 5px 6px 10px;
+  background-color: light-dark(#98a77e, #869966);
+  color: #fffcd6;
+  padding-left: 4.2rem;
+  padding-right: 4.2rem;
+}
+
+#spb4 {
+  background-color: light-dark(#3a585d, #354345);
+}
+#spb4:hover {
+  box-shadow: rgb(44, 31, 8) 5px 6px 10px;
+  background-color: light-dark(#98a77e, #869966);
+  color: #fffcd6;
+  padding-left: 4.2rem;
+  padding-right: 4.2rem;
+}
+
+#spb5 {
+  background-color: light-dark(#3a585d, #354345);
+  padding-left: 4.8rem;
+  padding-right: 4.8rem;
+}
+#spb5:hover {
+  box-shadow: rgb(44, 31, 8) 5px 6px 10px;
+  background-color: light-dark(#98a77e, #869966);
+  color: #fffcd6;
+  padding-left: 4.2rem;
+  padding-right: 4.2rem;
+}

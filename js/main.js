@@ -104,6 +104,10 @@ function fadeIn() {
   document.querySelector(".placeholder").classList.add("fadeIn");
 }
 
+function removeFadeIn() {
+  document.querySelector("#efficiency").classList.remove("fadeIn");
+  document.querySelector("#efficiency").addEventListener("animationend, removeFadeIn");
+}
 /*HOTSPOT 3 (ved højre skulder)*/
 /*******************************************/
 
@@ -157,6 +161,11 @@ function fadeIn() {
   document.querySelector(".placeholder").classList.add("fadeIn");
 }
 
+function removeFadeIn() {
+  document.querySelector("#efficiency").classList.remove("fadeIn");
+  document.querySelector("#efficiency").addEventListener("animationend, removeFadeIn");
+}
+
 /*HOTSPOT 4 (ved telefon)*/
 /*******************************************/
 
@@ -202,6 +211,11 @@ function fadeIn() {
   document.querySelector("#requirement").classList.add("fadeIn");
   document.querySelector("#svg-container").classList.add("fadeIn");
   document.querySelector(".placeholder").classList.add("fadeIn");
+}
+
+function removeFadeIn() {
+  document.querySelector("#efficiency").classList.remove("fadeIn");
+  document.querySelector("#efficiency").addEventListener("animationend, removeFadeIn");
 }
 /**********************GO CRAZY knap********************/
 const btn = document.querySelector("#gocrazy");
