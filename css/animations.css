@@ -96,7 +96,7 @@
 
 @keyframes color_kf {
   0% {
-    background-color: red;
+    background-color: rgb(189, 28, 28);
   }
   25% {
     background-color: orange;
